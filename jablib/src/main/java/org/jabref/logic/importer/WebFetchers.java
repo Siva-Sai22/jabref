@@ -44,6 +44,7 @@ import org.jabref.logic.importer.fetcher.ResearchGate;
 import org.jabref.logic.importer.fetcher.RfcFetcher;
 import org.jabref.logic.importer.fetcher.ScholarArchiveFetcher;
 import org.jabref.logic.importer.fetcher.ScienceDirect;
+import org.jabref.logic.importer.fetcher.Scopus;
 import org.jabref.logic.importer.fetcher.SemanticScholar;
 import org.jabref.logic.importer.fetcher.SpringerNatureFullTextFetcher;
 import org.jabref.logic.importer.fetcher.SpringerNatureWebFetcher;
@@ -127,7 +128,7 @@ public class WebFetchers {
         set.add(new CiteSeer());
         set.add(new DOAJFetcher(importFormatPreferences));
         set.add(new IEEE(importFormatPreferences, importerPreferences));
-        set.add(new ScienceDirect(importerPreferences));
+        set.add(new Scopus(importerPreferences));
         set.add(new CompositeSearchBasedFetcher(set, importerPreferences, 30));
         // set.add(new CollectionOfComputerScienceBibliographiesFetcher(importFormatPreferences));
         set.add(new DOABFetcher());
@@ -246,6 +247,7 @@ public class WebFetchers {
         fetchers.add(new IEEE(importFormatPreferences, importerPreferences));
         fetchers.add(new SpringerNatureWebFetcher(importerPreferences));
         fetchers.add(new ScienceDirect(importerPreferences));
+        fetchers.add(new Scopus(importerPreferences));
         fetchers.add(new AstrophysicsDataSystem(importFormatPreferences, importerPreferences));
         fetchers.add(new BiodiversityLibrary(importerPreferences));
         fetchers.add(new MedlineFetcher(importerPreferences));

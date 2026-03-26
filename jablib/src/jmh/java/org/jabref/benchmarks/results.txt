@@ -1,0 +1,3 @@
+Benchmark                                           Mode  Cnt       Score       Error  Units
+LatexToUnicodeBenchmark.adapterBenchmark           thrpt   20  267540.087 ±  5090.549  ops/s
+LatexToUnicodeBenchmark.luceneCharFilterBenchmark  thrpt   20  943912.731 ± 11208.893  ops/s
